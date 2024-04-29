@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Fylo landing page with dark theme and features grid</title>
+
+  <!-- css -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body class="is-relative">
+
+  <div class="is-fixed mobile-menu-container text-center">
+    <ul class="mobile-menu flex column gap-small">
+      <li><a href="#" class="nav-link is-relative">Features</a></li>
+      <li><a href="#" class="nav-link is-relative">Team</a></li>
+      <li><a href="#" class="nav-link is-relative">Sign in</a></li>
+    </ul>
+  </div>
+
+  <div class="page-wrapper">
+    <div class="main-wrapper">
+      <!-- header -->
+      <header class="section_header">
+        <div class="padding-global">
+          <!-- navbar -->
+          <nav class="section_nav">
+            <div class="padding-section-small">
+              <div class="container-large">
+                <div class="flex justify-between align-center">
+                  <a href="#" class="brand"><img src="images/logo.svg" alt=""></a>
+                  <ul class="desktop-menu flex align-center gap-medium">
+                    <li><a href="#" class="nav-link is-relative">Features</a></li>
+                    <li><a href="#" class="nav-link is-relative">Team</a></li>
+                    <li><a href="#" class="nav-link is-relative">Sign in</a></li>
+                  </ul>
+                  <button class="menuToggle flex align-center justify-center">
+                    <i class="hamburger fa-solid fa-bars"></i>
+                    <i class="close fa-solid fa-x"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </nav>
+          <!-- hero -->
+          <section class="section_hero text-center">
+            <div class="padding-section-small">
+              <div class="container-small">
+                <div class="hero-img-wrapper margin-bottom-small">
+                  <img src="images/illustration-intro.png" alt="" class="hero-img">
+                </div>
+                <div class="hero-content">
+                  <div class="text-wrapper margin-bottom-small">
+                    <h1 class="heading-one margin-bottom-small">All your files in one secure location, accessible anywhere.</h1>
+                    <p class="hero-description">
+                      Fylo stores all your most important files in one secure location. Access them wherever 
+                      you need, share and collaborate with friends family, and co-workers.
+                    </p>
+                  </div>
+                  <button class="primary-btn">get started</button>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </header>
+      <!-- usp section -->
+      <section class="section_usp-section text-center">
+        <div class="padding-global padding-section-medium">
+          <div class="container-small">
+            <div class="grid-2col-2row gap-medium usp-grid">
+              <!-- dynamically show the usps -->
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- productive section -->
+      <section class="section_productive">
+        <div class="padding-global padding-section-medium">
+          <div class="container-medium">
+            <div class="grid-2col gap-medium align-center">
+              <div class="gridbox productive-img-wrapper"><img src="images/illustration-stay-productive.png" alt=""></div>
+              <div class="gridbox productive-content">
+                <div class="text-wrapper margin-bottom-medium stay-productive-text">
+                  <h2 class="heading-two margin-bottom-medium productive-heading">Stay productive, wherever you are</h2>
+                  <p class="productive-description">
+                    Never let location be an issue when accessing your files. Fylo has you covered for all of your file 
+                    storage needs.
+                    <br> <br>
+                    Securely share files and folders with friends, family and colleagues for live collaboration. No email 
+                    attachments required.
+                  </p>
+                </div>
+                <button class="secondary-btn flex align-center gap-tiny is-relative">
+                  See how Fylo works 
+                  <div class="arrow flex justify-center align-center">
+                    <img src="images/icon-arrow.svg" alt="" class="default-arrow">
+                    <img src="images/hover-arrow.svg" alt="" class="hover-arrow">
+                  </div>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- testimonial section -->
+      <section class="section_testimonials">
+        <div class="padding-global padding-section-medium">
+          <div class="container-medium is-relative">
+            <img src="images/bg-quotes.png" alt="" class="is-absolute bg-quote">
+            <div class="grid-3col gap-medium testimonial-grid">
+              <!-- add testimonial dynamically here -->
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- footer -->
+      <footer class="section_footer is-relative bg-very-dark">
+        <!-- cta -->
+        <div class="cta-card is-absolute text-center">
+          <div class="cta-text margin-bottom-large">
+            <h2 class="heading-two margin-bottom-small">Get early access today</h2>
+            <p class="cta-description">
+              It only takes a minute to sign up and our free starter tier is extremely generous. If you have any 
+              questions, our support team would be happy to help you.
+            </p>
+          </div>
+          <form action="#" class="email-form flex align-top justify-center gap-small">
+            <div class="email-field">
+              <input type="text" class="emailInput  margin-bottom-tiny" placeholder="email@example.com">
+              <p class="error">Error</p>
+            </div>
+            <input type="submit" value="Get Started For Free" class="primary-btn submit-btn">
+          </form>
+        </div>
+        <!-- footer -->
+        <div class="padding-global padding-section-medium">
+          <div class="container-large">
+            <img src="images/logo.svg" alt="" class="footer-logo margin-bottom-large">
+            <div class="footer-container flex justify-between align-top">
+              <div class="footerbox flex align-top gap-small">
+                 <img src="images/icon-location.svg" alt="" class="contact-img">
+                 <p class="location">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et 
+                  dolore magna aliqua
+                 </p>
+              </div>
+              <div class="footerbox flex column gap-tiny">
+                <div class="footerbox flex align-center gap-small">
+                  <img src="images/icon-phone.svg" alt="" class="contact-img">
+                  <p class="phone-number">+1-543-123-4567</p>
+                </div>
+                <div class="footerbox flex align-center gap-small">
+                  <img src="images/icon-email.svg" alt="" class="contact-img">
+                  <p class="phone-number">example@fylo.com</p>
+                </div>
+              </div>
+              <div class="footerbox">
+                <ul class="footer-menu flex column gap-tiny">
+                  <li><a href="#" class="footer-link">About us</a></li>
+                  <li><a href="#" class="footer-link">Jobs</a></li>
+                  <li><a href="#" class="footer-link">Press</a></li>
+                  <li><a href="#" class="footer-link">Blog</a></li>
+                </ul>
+              </div>
+              <div class="footerbox">
+                <ul class="footer-menu flex column gap-tiny">
+                  <li><a href="#" class="footer-link">Contact us</a></li>
+                  <li><a href="#" class="footer-link">Terms</a></li>
+                  <li><a href="#" class="footer-link">Privacy</a></li>
+                </ul>
+              </div>
+              <div class="footerbox">
+                <ul class="social-list flex align-center gap-tiny">
+                  <li class="social-item"><a href="#" class="social-link"><i class="fa-brands fa-facebook-f"></i></a></li>
+                  <li class="social-item"><a href="#" class="social-link"><i class="fa-brands fa-twitter"></i></a></li>
+                  <li class="social-item"><a href="#" class="social-link"><i class="fa-brands fa-instagram"></i></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+
+  <!-- js -->
+  <script src="app.js"></script>
+
+  <footer class="is-absolute footer-bottom">
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://www.frontendmentor.io/profile/Veer-graphics" target="_blank">Veer-graphics</a>.
+    </p>
+  </footer>
+
+</body>
+</html>
